@@ -24,7 +24,7 @@ header {
   display: flex;
   background-color: black;
   color: white;
-  height: 130px;
+  height: 110px;
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -55,7 +55,55 @@ footer {
   color: white;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 50px;
+}
+
+.flex-auto {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-gap: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.cardFilm {
+  -webkit-box-shadow: 0px 0px 1px 1px #000000;
+  -moz-box-shadow: 0px 0px 1px 1px #000000;
+  -ms-box-shadow: 0px 0px 1px 1px #000000;
+  -o-box-shadow: 0px 0px 1px 1px #000000;
+  box-shadow: 1px 2px 5px 1px #a1a1a1;  
+  border: 1px solid #888888;  
+  width: 150px;
+  height: 220px;
+  text-align: center;
+}
+
+.cardFilm > img {
+  width: 100%;
+  height: 160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  justify-self: center;
+}
+
+.cardFilm > h3 {
+  background-color: rgb(22, 21, 36);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cardFilm > button {
+  padding: 1px;
+  background-color: rgb(76, 76, 87);
+  color: white;
+  width: 90%;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
