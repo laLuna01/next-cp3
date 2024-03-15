@@ -20,6 +20,44 @@ body {
   
 }
 
+header {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 130px;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header > img {
+  height: 90px;
+  width: 80px;
+  margin-right: 10px;
+}
+
+header > p {
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  header > p {
+    font-size: 22px;
+  }
+}
+
+footer {
+  display: flex;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

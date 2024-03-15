@@ -2,7 +2,8 @@ const Header = () => {
     return (
         <>
             <header>
-                <p>Aqui vai o header</p>
+                <img src="logo.png" alt="logo" width={80} height={80} />
+                <p>Os melhores filmes estão aqui</p>
             </header>
         </>
     );
